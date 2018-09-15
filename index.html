@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>Bootstrap Template</title>
+
+    <style>
+      #panel{
+        padding:50px;
+        display:none;
+        color:white;
+      }
+      #panel,#flip{
+        padding:5px;
+        color:white;
+        text-align:center;
+        background-color: grey;
+        border:1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- hide -->
+   <!--  <button type="button" id="btn">Open</button>
+    <button type="button" class="buton">Hide</button> -->
+
+    <!-- fade -->
+    <button type="button" id="btn1">Button1</button>
+    <button type="button" class="buton">toggle</button>
+    <button type="button" id="btn2">Button2</button>
+    <button type="button" id="btn3">Button3</button>
+    <button type="button" id="btn4">Button4</button>
+    <button type="button" id="btn5">Button5</button>
+
+    <!-- slide toggle -->
+    <div id="flip">Slide the panel</div>
+    <div id="panel">"Hi User"</div>
+    
+    <!-- even,odd -->
+    <div class="menu">
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contacts</li>
+        <li>gallery</li>
+        <li>view</li>
+      </ul>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- <script>
+      $(document).ready(function(){
+        alert("its oka");
+      })
+    </script> -->
+
+   <!--  <script>
+      $(document).ready(function(){
+        $("h1").click(function(){
+            alert("yes,its oka");
+        });
+      });
+    </script> -->
+
+    <!-- hide -->
+    <script>
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          alert("open it");
+        });
+        $(".buton").click(function(){
+          $(".buton").hide("2000");
+        });
+      });
+    </script>
+
+    <!-- fade -->
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $(".buton").toggle(2000);
+        });
+        
+        $("#btn2").click(function(){
+          $(".buton").fadeOut(2000);
+        });
+
+        $("#btn3").click(function(){
+          $(".buton").fadeIn(2000);
+        });
+
+        $("#btn4").click(function(){
+          $(".buton").fadeToggle(2000);
+        });
+        
+        $("#btn5").dblclick(function(){
+          $(".buton").fadeTo(2000,0.5);
+        });
+
+        // slide toggle
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        });
+
+        $("li:odd").addClass("odd"); //odd
+        $("li:even").addClass("even"); //even
+        $("li:first").addClass("first"); //first
+        $("li:last").addClass("last"); //last
+        $("li:eq(3)").addClass("nth"); //nth
+
+      });
+    </script>
+  </body>
+</html>

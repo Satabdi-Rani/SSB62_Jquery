@@ -1,0 +1,21 @@
+.odd{
+	background:orange;
+	padding:10px;
+}
+.even{
+	background:green;
+	padding:10px;
+
+}
+.first{
+	background:yellow;
+	padding:10px;
+}
+.last{
+	background:red;
+	padding:10px;
+}
+.nth{
+	background:maroon;
+	padding:10px;
+}
